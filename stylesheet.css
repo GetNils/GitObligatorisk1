@@ -1,0 +1,81 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 150px;
+    float: right;
+    border: solid 1px whitesmoke;
+    margin-top: 30px;
+}
+.page {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr 16fr 1fr;
+    grid-template-areas: 'header'
+    'menu'
+    'main'
+    'footer';
+}
+.header {
+    background-color: black;
+    color: whitesmoke;
+    grid-area: header;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px deepskyblue;
+}
+.menu {
+    background-color: dimgrey;
+    grid-area: menu;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    padding: 10px;
+}
+a {
+    background-color: dimgrey;
+    grid-area: menu;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+button {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+button:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+#menuButton {
+    width: 60px;
+    text-align: center;
+}
+#menuButton:hover, a:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+#menuFull {
+    display: none;
+}
+.main {
+    background-color: lightgrey;
+    grid-area: main;
+    padding: 10px;
+}
+.footer {
+    background-color: black;
+    grid-area: footer;
+    padding: 10px;
+    text-align: right;
+    color: whitesmoke;
+    text-shadow: 1px 1px deepskyblue;
+}
+.spacing {
+    height: 50px;
+}
