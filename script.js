@@ -1,11 +1,7 @@
-let allHeadlines = document.getElementById('headline');
+let newHeadlineContent = 'Custumized';
 
 function customHeadline() {
-    allHeadlines.style.fontStyle = "italic";
-}
-
-function defaultHeadline() {
-    allHeadlines.style.fontStyle = "normal";
+    headlineContent.innerHTML = '<h5>' + '<i>' + newHeadlineContent + '</i>' + '</h5>';
 }
 
 function menuToggle() {
@@ -17,6 +13,8 @@ function menuToggle() {
       menuFull.style.display = 'inline-block';
  }
 }
+
 function fullBlogPost(goToFullBlogPost) {
-    alert('Blog under construction, check back later.');
+    //alert('Blog under construction, check back later.');
+    console.log('Blog under construction, check back later.');
 }
